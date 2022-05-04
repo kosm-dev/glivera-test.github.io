@@ -2,6 +2,9 @@ html,
 body {
   height: 100%;
 }
+a{
+  display: inline-block;
+}
 
 body {
   @extend %roboto-400;
@@ -31,9 +34,41 @@ body {
   padding: 0 10px;
 }
 
-.container-fluid{
-   width: 100%;
+.container-fluid {
+  width: 100%;
   max-width: 1620px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.title {
+  @extend %roboto-500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $default-2;
+}
+
+.button {
+  min-width: 90px;
+  display: inline-block;
+  padding: 11px 20px;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid $accent;
+  border-radius: 30px;
+  cursor: pointer;
+  @extend %roboto-500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.button--special {
+  background: linear-gradient(0deg, #4cb649 0%, #5ddf5a 100%);
+  border-radius: 30px;
+  color: #fff;
+  border: none;
 }

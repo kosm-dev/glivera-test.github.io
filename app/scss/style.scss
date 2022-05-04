@@ -29,7 +29,6 @@
     width: 160px;
   }
 }
-
 .logo {
   &__img {
     max-height: 22px;
@@ -70,39 +69,83 @@
   &__list-link--special::after {
     display: none;
   }
-
   &__list-link--active {
     padding-bottom: 6px;
     border-bottom: 3px solid $accent;
   }
-  
-}
-.button {
-  min-width: 90px;
-  display: inline-block;
-  padding: 11px 20px;
-  margin: 0;
-  background-color: transparent;
-  border: 1px solid $accent;
-  border-radius: 30px;
-  cursor: pointer;
-  @extend %roboto-500;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
 }
 
-.button--special {
-  background: linear-gradient(0deg, #4cb649 0%, #5ddf5a 100%);
-  border-radius: 30px;
-  color: #fff;
-  border: none;
-}
+// footer
 
-.login {
-}
-.get {
+.footer {
+  padding: 85px 0 90px;
+  &__inner {
+  }
+  &__logo {
+    display: inline-block;
+    margin-bottom: 58px;
+  }
+  &__items {
+    display: flex;
+  }
+  &__item {
+  }
+  &__item-company {
+    display: block;
+    width: 155px;
+    margin-right: 46px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  ul.footer__list--programs {
+    margin-bottom: 40px;
+  }
+
+  &__list-item {
+  }
+  &__list-link {
+    margin-bottom: 10px;
+    @extend %roboto-400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $default;
+  }
+  &__item-others {
+    width: 165px;
+    margin-right: 36px;
+  }
+
+  &__item-legal {
+    width: 135px;
+  }
+  &__item-about {
+    width: 100%;
+    max-width: 600px;
+    padding-left: 20px;
+    margin-left: auto;
+  }
+  &__about-text {
+    margin-bottom: 12px;
+    @extend %roboto-400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $default;
+  }
+  &__social-box {
+    margin-top: 28px;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+  &__social-item + .footer__social-item{
+    margin-left: 31px;
+  }
+  &__social-link {
+  }
+  &__social-icon {
+  }
 }
 
 @import "media";
