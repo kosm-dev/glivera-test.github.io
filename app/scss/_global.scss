@@ -4,6 +4,10 @@ body {
 }
 
 body {
+  @extend %roboto-400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $default;
 }
 
 .wrapper {
@@ -18,4 +22,18 @@ body {
 
 .footer {
   flex: 0 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-fluid{
+   width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
