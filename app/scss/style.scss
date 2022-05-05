@@ -461,4 +461,138 @@
   }
 }
 
+.pricing {
+  padding-top: 100px;
+  background: linear-gradient(135deg, #3d4251 0%, #272b35 100%);
+  &__inner {
+  }
+  &__title {
+    margin-bottom: 40px;
+    @extend %roboto-300;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__pay {
+  }
+  &__pay-title {
+  }
+  &__pay-items {
+  }
+  &__pay-item {
+  }
+  &__pay-link {
+  }
+  &__box {
+  }
+  &__link {
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  min-height: 340px;
+  padding: 40px 0;
+  background: #ffffff;
+  border: 1px solid #ebeced;
+  border-radius: 6px;
+  &__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    @extend %roboto-500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: $default-2;
+  }
+  &__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 24px;
+    background-color: $accent;
+  }
+  &__value {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 27px;
+    padding-bottom: 18px;
+    position: relative;
+    @extend %roboto-300;
+    color: $default-3;
+    font-size: 24px;
+    line-height: 32px;
+    border-bottom: 1px solid #ebeced;
+  }
+  &__value-sup {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__value-num {
+    padding-left: 20px;
+    font-size: 56px;
+    line-height: 66px;
+  }
+  &__value-month {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__subtitle {
+    width: 100%;
+    margin-bottom: 30px;
+    @extend %roboto-400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: $default-2;
+  }
+  &__subtitle span {
+    display: inline-block;
+  }
+  &__link {
+    min-width: 205px;
+  }
+  &__cost-old {
+    margin-right: 8px;
+    @extend %roboto-400;
+    text-decoration-line: line-through;
+    color: #f24458;
+  }
+  &__cost-new {
+  }
+  &__cost-discount {
+    @extend %roboto-700;
+    color: #323642;
+  }
+}
+.card--active {
+  min-height: 380px;
+  border: 4px solid #4cb649;
+  border-radius: 4px;
+}
+
 @import "media";
