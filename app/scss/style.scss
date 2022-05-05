@@ -323,6 +323,9 @@
     margin-right: 60px;
     border-right: 1px solid #ebeced;
   }
+  &__content-form{
+    display: none;
+  }
   &__title {
     margin-bottom: 10px;
     @extend %roboto-300;
