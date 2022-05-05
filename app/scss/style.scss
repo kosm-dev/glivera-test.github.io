@@ -463,9 +463,8 @@
 
 .pricing {
   padding-top: 100px;
+  padding-bottom: 53px;
   background: linear-gradient(135deg, #3d4251 0%, #272b35 100%);
-  &__inner {
-  }
   &__title {
     margin-bottom: 40px;
     @extend %roboto-300;
@@ -475,23 +474,64 @@
     color: #ffffff;
   }
   &__items {
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   &__pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
   }
   &__pay-title {
+    margin-right: 30px;
+    @extend %roboto-300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
   }
   &__pay-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
   &__pay-item {
+    margin-right: 30px;
   }
-  &__pay-link {
+
+  &__pay-item:last-child {
+    margin-left: 0;
   }
   &__box {
+    display: flex;
+    justify-content: center;
   }
   &__link {
+    position: relative;
+    margin-right: 40px;
+    padding-right: 36px;
+    @extend %roboto-500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+  &__link:last-child{
+    margin-right: 0;
+  }
+  &__link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/icons/arrow.svg');
+    background-repeat: no-repeat;
   }
 }
 
@@ -581,8 +621,6 @@
     @extend %roboto-400;
     text-decoration-line: line-through;
     color: #f24458;
-  }
-  &__cost-new {
   }
   &__cost-discount {
     @extend %roboto-700;
