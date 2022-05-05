@@ -4,6 +4,53 @@
 @import "libs";
 @import "global";
 
+.warning {
+  padding: 12px;
+  background-color: $default-3;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &__protect {
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+  }
+  &__protect-img {
+    margin-right: 5px;
+  }
+  &__protect-text {
+    @extend %roboto-700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ff8d00;
+  }
+  &__ip,
+  &__isp {
+    margin-right: 32px;
+    @extend %roboto-400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #889099;
+  }
+  &__link-learn {
+    @extend %roboto-400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+  &__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
 .header {
   padding: 40px 0;
   min-height: 40px;
@@ -519,18 +566,18 @@
     text-transform: uppercase;
     color: $accent;
   }
-  &__link:last-child{
+  &__link:last-child {
     margin-right: 0;
   }
-  &__link::after{
-    content: '';
+  &__link::after {
+    content: "";
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-    background-image: url('../images/icons/arrow.svg');
+    background-image: url("../images/icons/arrow.svg");
     background-repeat: no-repeat;
   }
 }
