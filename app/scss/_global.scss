@@ -6,6 +6,10 @@ a {
   display: inline-block;
 }
 
+.hide{
+  overflow: hidden
+}
+
 body {
   @extend %roboto-400;
   font-size: 14px;
@@ -37,9 +41,9 @@ body {
 
 .container-fluid {
   width: 100%;
-  max-width: 1620px;
+  max-width: 1640px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .title {
