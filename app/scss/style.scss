@@ -16,9 +16,8 @@
     justify-content: center;
     margin: 0 auto;
   }
-  &__content-item{
+  &__content-item {
     display: flex;
-
   }
   &__protect {
     margin-right: 32px;
@@ -86,7 +85,6 @@
   &__menu-close--active {
     display: block;
   }
- 
 }
 .logo {
   &__img {
@@ -298,12 +296,17 @@
   }
   &__items {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item-company {
     display: block;
     width: 155px;
     margin-right: 46px;
+  }
+
+  .footer__item-social {
+    display: none;
   }
   &__title {
     margin-bottom: 20px;
@@ -344,6 +347,7 @@
   &__social {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   &__social-item + .footer__social-item {
     margin-left: 31px;
