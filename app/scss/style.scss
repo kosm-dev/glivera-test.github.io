@@ -315,6 +315,7 @@
 .blog {
   &__inner {
     display: flex;
+    margin-bottom: 70px;
   }
   &__content {
     width: 100%;
@@ -526,8 +527,15 @@
   &__items {
     margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+  &__item {
+    margin-right: 20px;
+  }
+  &__item:last-child{
+    margin-right: 0;
   }
   &__pay {
     display: flex;
@@ -557,6 +565,7 @@
   &__box {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   &__link {
     position: relative;
