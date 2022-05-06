@@ -2,8 +2,20 @@ html,
 body {
   height: 100%;
 }
+a {
+  display: inline-block;
+}
+
+.hide{
+  overflow: hidden
+}
 
 body {
+  @extend %roboto-400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $default;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -18,4 +30,59 @@ body {
 
 .footer {
   flex: 0 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  @extend %roboto-500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $default-2;
+}
+
+.article-title {
+  @extend %roboto-300;
+  font-size: 24px;
+  line-height: 34px;
+  color: $default-3;
+}
+
+.button {
+  min-width: 90px;
+  display: inline-block;
+  padding: 11px 20px;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid $accent;
+  border-radius: 30px;
+  cursor: pointer;
+  @extend %roboto-500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $accent;
+}
+
+.button--special {
+  background: linear-gradient(0deg, #4cb649 0%, #5ddf5a 100%);
+  border-radius: 30px;
+  color: #fff;
+  border: none;
 }
